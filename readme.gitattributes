@@ -1,0 +1,27 @@
+Application:
+------------
+
+You are required to write a JAVA program that takes a symbolic infix expression as input
+and converts it to postfix notation, enter the values of each symbol, evaluates the postfix
+expression and outputs the resulting expression and its value. All operands are integer values,
+but intermediate results could be floating points. Your program should support the operators
++, -, * and /. Expressions can contain parentheses. You should use the stack implementation
+you did in part (A) for any stack data structure needed in the program.
+
+Postfix Vs. Infix Notations:
+--------------------------
+
+The standard way of writing expressions is known as infix notation because the binary operator
+is placed in-between its two operands.Although infix notation is the most common way of
+writing expressions, it is not the one used by compilers to parse expressions. Instead, compilers
+typically use a parenthesis-free notation referred to as postfix. In this notation, each operator
+appears after its operands.
+
+
+Evaluating Postfix Expressions:
+-------------------------------
+
+The postfix expression is scanned left-to-right. Operands are placed on a stack until an operator
+is found. Operands are then removed from the stack, the operation is performed on the operands
+and the result is pushed on to the stack. The process continues until the end of expression is
+reached.
